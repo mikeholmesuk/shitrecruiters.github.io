@@ -3,18 +3,17 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
+
     <article class="post">    
       
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+   
       <div class="entry">
-        {{ post.content | truncatewords:40}}
+        This website lists all the recruiters that send blanket, untargeted, shitty emails.
+
+        We accept pull requests - just add a new file in _recruiters.
       </div>
-      
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
-  {% endfor %}
+
 
     {% for recruiter in site.recruiters %}
         <li>{{recruiter.name}} - {{recruiter.email}}
