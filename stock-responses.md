@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Stock Responses
-permalink: /about/
+permalink: /stock-responses/
 ---
 
 <div class="posts">
