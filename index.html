@@ -15,4 +15,9 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
+
+    {% for recruiter in site.recruiters %}
+        <li>{{recruiter.name}} - {{recruiter.email}}
+    {% endfor %}
 </div>
+
